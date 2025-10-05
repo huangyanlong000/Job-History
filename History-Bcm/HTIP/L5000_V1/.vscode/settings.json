@@ -1,0 +1,8 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "rte.h": "c",
+        "taskmaster.h": "c",
+        "bsp.h": "c"
+    }
+}
