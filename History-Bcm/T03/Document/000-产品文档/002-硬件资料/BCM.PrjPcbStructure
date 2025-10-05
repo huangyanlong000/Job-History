@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=BCM1.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=BCM1.SchDoc|FileName=BCM2.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=BCM1.SchDoc|FileName=BCM3.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=BCM1.SchDoc|FileName=BCM4.SchDoc|SheetNumber=4

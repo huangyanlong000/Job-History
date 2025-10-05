@@ -1,0 +1,26 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "mpc5744p.h": "c",
+        "bsp.h": "c",
+        "systerm_mpc5744p.h": "c",
+        "freertosconfig.h": "c",
+        "typedefs.h": "c",
+        "mc33fs6522lae.h": "c",
+        "ioctrl.h": "c",
+        "udsroutine.h": "c",
+        "ecu_74hc4051.h": "c",
+        "rte.h": "c",
+        "ecu_74hc595.h": "c",
+        "spi0.h": "c",
+        "lin1.h": "c",
+        "uds_applicationlayer.h": "c",
+        "timer.h": "c",
+        "socketcan.h": "c",
+        "uds_service.h": "c",
+        "ecu_can1.h": "c",
+        "can1_comanger.h": "c",
+        "can1.h": "c",
+        "bcm.h": "c"
+    }
+}
