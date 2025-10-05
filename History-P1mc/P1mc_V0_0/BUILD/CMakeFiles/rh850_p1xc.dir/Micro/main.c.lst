@@ -1,0 +1,686 @@
+                                                                      Page 1
+                                                              /tmp/gh_0000ubi1.s
+Command Line: /home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/ease850 -w -annotate_call_return -elf -b0 -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Bsw/_Common -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Common -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Mcu -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Port -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro -I/home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/lib/rh850_compat -cg_underscore -cpu=rh850g3m -no_v850_simd -nomacro -patch_dbo=/home/huangyanlong/my_p/ecus/ADAS_V2_A2/BUILD/CMakeFiles/rh850_p1xc.dir/Micro/main.c.dbo -source=main.c -comp -o CMakeFiles/rh850_p1xc.dir/Micro/main.c.o -list /tmp/gh_0000ubi1.s 
+Original File: /tmp/gh_0000ubi1.s
+Source File: main.c
+Directory: /home/huangyanlong/my_p/ecus/ADAS_V2_A2/BUILD
+Host OS: Linux 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025
+EASE: Copyright (C) 1983-2023 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2023.1.4
+Build Directory: [Directory] merry:/export/comp_autobuild/v2023.1_co_2023-01-31/linux64-comp
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2023-1-comp/src@731791 (built by auto-compiler)
+Revision Date: Wed Feb  1 11:35:27 2023
+
+Release Date: Wed Feb  1 11:00:00 2023
+
+                           1 --Driver Command: ccrh850 -DDEBUG_MODE -DHW_VERSION=0
+                           2 --		-I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Bsw/_Common
+                           3 --		-I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Common
+                           4 --		-I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Mcu
+                           5 --		-I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Port
+                           6 --		-I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro -cpu=rh850g3m
+                           7 --		-dual_debug -ignore_callt_state_in_interrupts -nofarcalls
+                           8 --		-no_callt -large_sda -Onone -prepare_dispose -reserve_r2
+                           9 --		-shorten_loads -Wshadow -Wundef --brief_diagnostics --no_commons
+                          10 --		--no_wrap_diagnostics --prototype_errors -e _RESET -D__GHS__
+                          11 --		-D__RH850_P1MC__ --short_enum -c99 -bsp generic -sda=all -g
+                          12 --		-shorten_moves -passsource -list -additional_sda_reg=0
+                          13 --		-rh850_abi=ghs2014 -Onone -g -MD -MT
+                          14 --		CMakeFiles/rh850_p1xc.dir/Micro/main.c.o -MF
+                          15 --		CMakeFiles/rh850_p1xc.dir/Micro/main.c.o.d -o
+                          16 --		CMakeFiles/rh850_p1xc.dir/Micro/main.c.o -c
+                          17 --		/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/main.c
+                          18 --Source File:   /home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/main.c
+                          19 --Directory:     /home/huangyanlong/my_p/ecus/ADAS_V2_A2/BUILD
+                          20 --Compile Date:  Sun Sep 21 20:09:37 2025
+                          21 --Host OS:       Linux 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC
+                          22 --		Thu Jun 5 18:30:46 UTC 2025
+                          23 --Version:       C-RH850 2023.1.4 RELEASE VERSION
+                          24 --Release:       Compiler v2023.1.4
+                          25 --Revision Date: Wed Feb 1 11:35:44 2023
+                          26 --Release Date:  Wed Feb 1 11:00:00 2023
+                          27 -- ecom  -g -w
+                          28 
+                          29 --1: #include "stdio.h"
+                          30 --3: /********************************************************
+                          31 --4:  * @name  : main.c
+                          32 --5:  * @brief : the function of the main
+                          33 --6:  *******************************************************/
+                          34 --7:  int main(void)
+                          35 	.text
+                          36 ..bof..2Fhome.2Fhuangyanlong.2Fmy_p.2Fecus.2FADAS_V2_A2.2FBUILD.2FCMakeFiles.2Frh850_p1xc.2Edir.2FMicro.2Fmain.2Ec...2Fhome.2Fhuangyanlong.2Fmy_p.2Fecus.2FADAS_V2_A2.2FBUILD..68CFEB01..0::
+                          37 	.align	2
+                          38 	.align	2
+                          39 ..gh.f.a.2.e.0:
+                          40 	.type	..gh.f.a.2.e.0,@object
+                          41 	.size	..gh.f.a.2.e.0,0
+                          42 	.global	_main
+                          43 _main:
+                          44 .LDW01:
+                          45 --	    .bf
+                          46 .LDW11:
+                          47 --8:  {
+                          48 --9:     /*OS Initation*/
+                          49 --10:     
+                          50 --11:     return (0x00);
+
+                                                                      Page 2
+                                                              /tmp/gh_0000ubi1.s
+00000000 0052             51 	mov	0,r10
+                          52 --	    .ef
+                          53 .LDW21:
+                          54 .L35:
+                          55 	.jumptype return
+00000002 7f00             56 	jmp	[lp]
+                          57 --line8
+                          58 ..lin.376f75ed..ef387e9.0_1::
+                          59 	.global	___ghs_eofn_main
+                          60 ___ghs_eofn_main:
+                          61 	.type	_main,@function
+                          62 	.size	_main,.-_main
+                          63 	.align	2
+                          64 
+                          65 	.section ".ghrettbl",""
+                          66 	.align	4
+00000000 00000000*        67 .L36:	.word	.L35
+                          68 	.type	.L36,@object
+                          69 	.size	.L36,4
+                          70 	.data
+                          71 	.text
+                          72 
+                          73 --12:  }
+                          74 	.align	2
+                          75 
+                          76 	.data
+                          77 	.ghsnote version,29
+                          78 	.ghsnote tools,3
+                          79 	.ghsnote options,656
+                          80 	.text
+                          81 ..eof..2Fhome.2Fhuangyanlong.2Fmy_p.2Fecus.2FADAS_V2_A2.2FBUILD.2FCMakeFiles.2Frh850_p1xc.2Edir.2FMicro.2Fmain.2Ec...2Fhome.2Fhuangyanlong.2Fmy_p.2Fecus.2FADAS_V2_A2.2FBUILD..68CFEB01..0::
+                          82 	.section	.debug_abbrev		--off: 0
+                          83 .Ldw_abbr_begin:
+                          84 	.section	.debug_str		--off: 0
+                          85 .Ldw_str_begin:
+                          86 	.section	.debug_info		--off: 0
+                          87 .Ldw_begin:
+00000000 62000000         88 	.byte	98,0,0,0
+00000004 0200             89 	.byte	2,0
+00000006 00000000*        90 	.word	.Ldw_abbr_begin
+0000000a 04               91 	.byte	4
+0000000b 01               92 	.byte	1
+0000000c 00000000*        93 	.word	..bof..2Fhome.2Fhuangyanlong.2Fmy_p.2Fecus.2FADAS_V2_A2.2FBUILD.2FCMakeFiles.2Frh850_p1xc.2Edir.2FMicro.2Fmain.2Ec...2Fhome.2Fhuangyanlong.2Fmy_p.2Fecus.2FADAS_V2_A2.2FBUILD..68CFEB01..0
+00000010 00000000*        94 	.word	..eof..2Fhome.2Fhuangyanlong.2Fmy_p.2Fecus.2FADAS_V2_A2.2FBUILD.2FCMakeFiles.2Frh850_p1xc.2Edir.2FMicro.2Fmain.2Ec...2Fhome.2Fhuangyanlong.2Fmy_p.2Fecus.2FADAS_V2_A2.2FBUILD..68CFEB01..0
+                          95 	.section	.debug_str		--off: 0
+00000000 2f686f6d652f     96 	.strz	"/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/main.c"
+00000006 6875616e6779 
+0000000c 616e6c6f6e67 
+00000012 2f6d795f702f 
+00000018 656375732f41 
+0000001e 4441535f5632 
+00000024 5f41322f4d69 
+0000002a 63726f2f6d61 
+00000030 696e2e6300 
+                          97 	.section	.debug_info		--off: 20
+00000014 00000000*        98 	.word	.Ldw_str_begin
+                          99 	.section	.debug_str		--off: 53
+00000035 2f686f6d652f    100 	.strz	"/home/huangyanlong/my_p/ecus/ADAS_V2_A2/BUILD"
+0000003b 6875616e6779 
+00000041 616e6c6f6e67 
+00000047 2f6d795f702f 
+
+                                                                      Page 3
+                                                              /tmp/gh_0000ubi1.s
+0000004d 656375732f41 
+00000053 4441535f5632 
+00000059 5f41322f4255 
+0000005f 494c4400 
+                         101 	.section	.debug_info		--off: 24
+00000018 00000000*       102 	.word	.Ldw_str_begin+53
+                         103 	.section	.debug_str		--off: 99
+00000063 474853204320    104 	.strz	"GHS C 2023.1.4 [dual]"
+00000069 323032332e31 
+0000006f 2e34205b6475 
+00000075 616c5d00 
+                         105 	.section	.debug_info		--off: 28
+0000001c 00000000*       106 	.word	.Ldw_str_begin+99
+00000020 0100            107 	.byte	1,0
+00000022 00000000*       108 	.word	.Ldw_line_begin
+00000026 00000000*       109 	.word	.Ldw_macinfo_begin
+0000002a 00              110 	.byte	0
+                         111 
+                         112 	.section	.debug_abbrev		--off: 0
+00000000 01              113 	.byte	1
+00000001 11              114 	.byte	17
+00000002 01              115 	.byte	1
+00000003 1101            116 	.byte	17,1
+00000005 1201            117 	.byte	18,1
+00000007 030e            118 	.byte	3,14
+00000009 1b0e            119 	.byte	27,14
+0000000b 250e            120 	.byte	37,14
+0000000d 1305            121 	.byte	19,5
+0000000f 1006            122 	.byte	16,6
+00000011 4306            123 	.byte	67,6
+00000013 420b            124 	.byte	66,11
+00000015 0000            125 	.byte	0,0
+                         126 
+                         127 	.section	.debug_line		--off: 0
+                         128 .Ldw_line_begin:
+00000000 cc010000        129 	.byte	204,1,0,0
+00000004 0200            130 	.byte	2,0
+00000006 ab010000        131 	.byte	171,1,0,0
+0000000a 01              132 	.byte	1
+0000000b 00              133 	.byte	0
+0000000c 00              134 	.byte	0
+0000000d 04              135 	.byte	4
+0000000e 0a              136 	.byte	10
+0000000f 000101          137 	.byte	0,1,1
+00000012 010100          138 	.byte	1,1,0
+00000015 000001          139 	.byte	0,0,1
+00000018 00              140 	.byte	0
+00000019 2f686f6d652f    141 	.strz	"/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/main.c"
+0000001f 6875616e6779 
+00000025 616e6c6f6e67 
+0000002b 2f6d795f702f 
+00000031 656375732f41 
+00000037 4441535f5632 
+0000003d 5f41322f4d69 
+00000043 63726f2f6d61 
+00000049 696e2e6300 
+0000004e 000000          142 	.byte	0,0,0
+00000051 2f686f6d652f    143 	.strz	"/home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/ansi/stdio.h"
+00000057 6875616e6779 
+0000005d 616e6c6f6e67 
+00000063 2f6d795f702f 
+
+                                                                      Page 4
+                                                              /tmp/gh_0000ubi1.s
+00000069 746f6f6c732f 
+0000006f 6768732d7268 
+00000075 3835302f636f 
+0000007b 6d705f323032 
+00000081 3331342f616e 
+00000087 73692f737464 
+0000008d 696f2e6800 
+00000092 000000          144 	.byte	0,0,0
+00000095 2f686f6d652f    145 	.strz	"/home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/ansi/ghs_null.h"
+0000009b 6875616e6779 
+000000a1 616e6c6f6e67 
+000000a7 2f6d795f702f 
+000000ad 746f6f6c732f 
+000000b3 6768732d7268 
+000000b9 3835302f636f 
+000000bf 6d705f323032 
+000000c5 3331342f616e 
+000000cb 73692f676873 
+000000d1 5f6e756c6c2e 
+000000d7 6800 
+000000d9 000000          146 	.byte	0,0,0
+000000dc 2f686f6d652f    147 	.strz	"/home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/ansi/stdarg.h"
+000000e2 6875616e6779 
+000000e8 616e6c6f6e67 
+000000ee 2f6d795f702f 
+000000f4 746f6f6c732f 
+000000fa 6768732d7268 
+00000100 3835302f636f 
+00000106 6d705f323032 
+0000010c 3331342f616e 
+00000112 73692f737464 
+00000118 6172672e6800 
+0000011e 000000          148 	.byte	0,0,0
+00000121 2f686f6d652f    149 	.strz	"/home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/ansi/ghs_valist.h"
+00000127 6875616e6779 
+0000012d 616e6c6f6e67 
+00000133 2f6d795f702f 
+00000139 746f6f6c732f 
+0000013f 6768732d7268 
+00000145 3835302f636f 
+0000014b 6d705f323032 
+00000151 3331342f616e 
+00000157 73692f676873 
+0000015d 5f76616c6973 
+00000163 742e6800 
+00000167 000000          150 	.byte	0,0,0
+0000016a 2f686f6d652f    151 	.strz	"/home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/ansi/ghs_annex_k.h"
+00000170 6875616e6779 
+00000176 616e6c6f6e67 
+0000017c 2f6d795f702f 
+00000182 746f6f6c732f 
+00000188 6768732d7268 
+0000018e 3835302f636f 
+00000194 6d705f323032 
+0000019a 3331342f616e 
+000001a0 73692f676873 
+000001a6 5f616e6e6578 
+000001ac 5f6b2e6800 
+000001b1 000000          152 	.byte	0,0,0
+000001b4 00              153 	.byte	0
+                         154 	.section	.debug_macinfo		--off: 0
+
+                                                                      Page 5
+                                                              /tmp/gh_0000ubi1.s
+                         155 .Ldw_macinfo_begin:
+                         156 	.section	.debug_frame		--off: 0
+                         157 .Ldw_frame_begin:
+00000000 8c000000        158 	.byte	140,0,0,0
+00000004 ffffffff        159 	.byte	255,255,255,255
+00000008 01              160 	.byte	1
+00000009 00              161 	.byte	0
+0000000a 01              162 	.byte	1
+0000000b 01              163 	.byte	1
+0000000c 1f              164 	.byte	31
+0000000d 0c              165 	.byte	12
+0000000e 03              166 	.byte	3
+0000000f 00              167 	.byte	0
+00000010 07              168 	.byte	7
+00000011 00              169 	.byte	0
+00000012 07              170 	.byte	7
+00000013 01              171 	.byte	1
+00000014 07              172 	.byte	7
+00000015 02              173 	.byte	2
+00000016 07              174 	.byte	7
+00000017 03              175 	.byte	3
+00000018 07              176 	.byte	7
+00000019 04              177 	.byte	4
+0000001a 07              178 	.byte	7
+0000001b 05              179 	.byte	5
+0000001c 07              180 	.byte	7
+0000001d 06              181 	.byte	6
+0000001e 07              182 	.byte	7
+0000001f 07              183 	.byte	7
+00000020 07              184 	.byte	7
+00000021 08              185 	.byte	8
+00000022 07              186 	.byte	7
+00000023 09              187 	.byte	9
+00000024 07              188 	.byte	7
+00000025 0a              189 	.byte	10
+00000026 07              190 	.byte	7
+00000027 0b              191 	.byte	11
+00000028 07              192 	.byte	7
+00000029 0c              193 	.byte	12
+0000002a 07              194 	.byte	7
+0000002b 0d              195 	.byte	13
+0000002c 07              196 	.byte	7
+0000002d 0e              197 	.byte	14
+0000002e 07              198 	.byte	7
+0000002f 0f              199 	.byte	15
+00000030 07              200 	.byte	7
+00000031 10              201 	.byte	16
+00000032 07              202 	.byte	7
+00000033 11              203 	.byte	17
+00000034 07              204 	.byte	7
+00000035 12              205 	.byte	18
+00000036 07              206 	.byte	7
+00000037 13              207 	.byte	19
+00000038 08              208 	.byte	8
+00000039 14              209 	.byte	20
+0000003a 08              210 	.byte	8
+0000003b 15              211 	.byte	21
+0000003c 08              212 	.byte	8
+0000003d 16              213 	.byte	22
+0000003e 08              214 	.byte	8
+0000003f 17              215 	.byte	23
+
+                                                                      Page 6
+                                                              /tmp/gh_0000ubi1.s
+00000040 08              216 	.byte	8
+00000041 18              217 	.byte	24
+00000042 08              218 	.byte	8
+00000043 19              219 	.byte	25
+00000044 08              220 	.byte	8
+00000045 1a              221 	.byte	26
+00000046 08              222 	.byte	8
+00000047 1b              223 	.byte	27
+00000048 08              224 	.byte	8
+00000049 1c              225 	.byte	28
+0000004a 08              226 	.byte	8
+0000004b 1d              227 	.byte	29
+0000004c 07              228 	.byte	7
+0000004d 1e              229 	.byte	30
+0000004e 08              230 	.byte	8
+0000004f 1f              231 	.byte	31
+00000050 07              232 	.byte	7
+00000051 20              233 	.byte	32
+00000052 07              234 	.byte	7
+00000053 21              235 	.byte	33
+00000054 07              236 	.byte	7
+00000055 22              237 	.byte	34
+00000056 07              238 	.byte	7
+00000057 23              239 	.byte	35
+00000058 07              240 	.byte	7
+00000059 24              241 	.byte	36
+0000005a 07              242 	.byte	7
+0000005b 25              243 	.byte	37
+0000005c 07              244 	.byte	7
+0000005d 26              245 	.byte	38
+0000005e 07              246 	.byte	7
+0000005f 27              247 	.byte	39
+00000060 07              248 	.byte	7
+00000061 28              249 	.byte	40
+00000062 07              250 	.byte	7
+00000063 29              251 	.byte	41
+00000064 07              252 	.byte	7
+00000065 2a              253 	.byte	42
+00000066 07              254 	.byte	7
+00000067 2b              255 	.byte	43
+00000068 07              256 	.byte	7
+00000069 2c              257 	.byte	44
+0000006a 07              258 	.byte	7
+0000006b 2d              259 	.byte	45
+0000006c 07              260 	.byte	7
+0000006d 2e              261 	.byte	46
+0000006e 07              262 	.byte	7
+0000006f 2f              263 	.byte	47
+00000070 07              264 	.byte	7
+00000071 30              265 	.byte	48
+00000072 07              266 	.byte	7
+00000073 31              267 	.byte	49
+00000074 07              268 	.byte	7
+00000075 32              269 	.byte	50
+00000076 07              270 	.byte	7
+00000077 33              271 	.byte	51
+00000078 07              272 	.byte	7
+00000079 34              273 	.byte	52
+0000007a 07              274 	.byte	7
+0000007b 35              275 	.byte	53
+0000007c 07              276 	.byte	7
+
+                                                                      Page 7
+                                                              /tmp/gh_0000ubi1.s
+0000007d 36              277 	.byte	54
+0000007e 07              278 	.byte	7
+0000007f 37              279 	.byte	55
+00000080 07              280 	.byte	7
+00000081 38              281 	.byte	56
+00000082 07              282 	.byte	7
+00000083 39              283 	.byte	57
+00000084 07              284 	.byte	7
+00000085 3a              285 	.byte	58
+00000086 07              286 	.byte	7
+00000087 3b              287 	.byte	59
+00000088 07              288 	.byte	7
+00000089 3c              289 	.byte	60
+0000008a 07              290 	.byte	7
+0000008b 3d              291 	.byte	61
+0000008c 07              292 	.byte	7
+0000008d 3e              293 	.byte	62
+0000008e 07              294 	.byte	7
+0000008f 3f              295 	.byte	63
+                         296 	.section	.debug_info		--off: 43
+0000002b 2a              297 	.byte	42
+                         298 	.section	.debug_str		--off: 121
+00000079 696e7400        299 	.strz	"int"
+                         300 	.section	.debug_info		--off: 44
+0000002c 00000000*       301 	.word	.Ldw_str_begin+121
+00000030 05              302 	.byte	5
+00000031 04              303 	.byte	4
+                         304 
+                         305 	.section	.debug_abbrev		--off: 23
+00000017 2a              306 	.byte	42
+00000018 24              307 	.byte	36
+00000019 00              308 	.byte	0
+0000001a 030e            309 	.byte	3,14
+0000001c 3e0b            310 	.byte	62,11
+0000001e 0b0b            311 	.byte	11,11
+00000020 0000            312 	.byte	0,0
+                         313 
+                         314 	.section	.debug_info		--off: 50
+00000032 4a              315 	.byte	74
+00000033 00000000*       316 	.word	.Ldw_begin+43
+00000037 01              317 	.byte	1
+                         318 
+                         319 	.section	.debug_abbrev		--off: 34
+00000022 4a              320 	.byte	74
+00000023 15              321 	.byte	21
+00000024 01              322 	.byte	1
+00000025 4910            323 	.byte	73,16
+00000027 270c            324 	.byte	39,12
+00000029 0000            325 	.byte	0,0
+                         326 
+                         327 	.section	.debug_info		--off: 56
+00000038 00              328 	.byte	0
+                         329 
+00000039 19              330 	.byte	25
+                         331 	.section	.debug_str		--off: 125
+0000007d 6d61696e00      332 	.strz	"main"
+                         333 	.section	.debug_info		--off: 58
+0000003a 00000000*       334 	.word	.Ldw_str_begin+125
+0000003e 07              335 	.byte	7
+0000003f 06              336 	.byte	6
+00000040 01              337 	.byte	1
+
+                                                                      Page 8
+                                                              /tmp/gh_0000ubi1.s
+00000041 00000000*       338 	.word	.Ldw_begin+43
+00000045 00000000*       339 	.word	_main
+00000049 00000000*       340 	.word	___ghs_eofn_main
+0000004d 01              341 	.byte	1
+0000004e 53              342 	.byte	83
+0000004f 02              343 	.byte	2
+00000050 00              344 	.byte	0
+00000051 02              345 	.byte	2
+00000052 00              346 	.byte	0
+00000053 00              347 	.byte	0
+00000054 00              348 	.byte	0
+00000055 00              349 	.byte	0
+00000056 01              350 	.byte	1
+00000057 01              351 	.byte	1
+00000058 00              352 	.byte	0
+00000059 01              353 	.byte	1
+                         354 
+                         355 	.section	.debug_abbrev		--off: 43
+0000002b 19              356 	.byte	25
+0000002c 2e              357 	.byte	46
+0000002d 01              358 	.byte	1
+0000002e 030e            359 	.byte	3,14
+00000030 3b0f            360 	.byte	59,15
+00000032 390f            361 	.byte	57,15
+00000034 3a0f            362 	.byte	58,15
+00000036 4910            363 	.byte	73,16
+00000038 1101            364 	.byte	17,1
+0000003a 1201            365 	.byte	18,1
+0000003c 400a            366 	.byte	64,10
+0000003e 8341            367 	.byte	131,65
+00000040 0f              368 	.byte	15
+00000041 8741            369 	.byte	135,65
+00000043 0d              370 	.byte	13
+00000044 8541            371 	.byte	133,65
+00000046 0f              372 	.byte	15
+00000047 8641            373 	.byte	134,65
+00000049 0d              374 	.byte	13
+0000004a 9241            375 	.byte	146,65
+0000004c 0f              376 	.byte	15
+0000004d 3c0c            377 	.byte	60,12
+0000004f 200b            378 	.byte	32,11
+00000051 3f0c            379 	.byte	63,12
+00000053 320b            380 	.byte	50,11
+00000055 4c0b            381 	.byte	76,11
+00000057 270c            382 	.byte	39,12
+00000059 0000            383 	.byte	0,0
+                         384 
+                         385 	.section	.debug_frame		--off: 144
+00000090 14000000        386 	.byte	20,0,0,0
+00000094 00000000*       387 	.word	.Ldw_frame_begin
+00000098 00000000*       388 	.word	_main
+0000009c 00000000*       389 	.word	___ghs_eofn_main-_main
+000000a0 01              390 	.byte	1
+000000a1 00000000*       391 	.word	.LDW21
+000000a5 00              392 	.byte	0
+000000a6 00              393 	.byte	0
+000000a7 00              394 	.byte	0
+                         395 	.section	.debug_line		--off: 437
+000001b5 000502          396 	.byte	0,5,2
+000001b8 00000000*       397 	.word	_main
+000001bc 06              398 	.byte	6
+
+                                                                      Page 9
+                                                              /tmp/gh_0000ubi1.s
+000001bd 03              399 	.byte	3
+000001be 0a              400 	.byte	10
+000001bf 02              401 	.byte	2
+000001c0 00              402 	.byte	0
+000001c1 01              403 	.byte	1
+000001c2 13              404 	.byte	19
+000001c3 06              405 	.byte	6
+000001c4 000502          406 	.byte	0,5,2
+000001c7 00000000*       407 	.word	___ghs_eofn_main
+000001cb 02              408 	.byte	2
+000001cc 00              409 	.byte	0
+000001cd 000101          410 	.byte	0,1,1
+                         411 	.section	.debug_info		--off: 90
+0000005a 22              412 	.byte	34
+0000005b 00000000*       413 	.word	.LDW11
+0000005f 00000000*       414 	.word	.LDW21
+                         415 
+                         416 	.section	.debug_abbrev		--off: 91
+0000005b 22              417 	.byte	34
+0000005c 0b              418 	.byte	11
+0000005d 01              419 	.byte	1
+0000005e 1101            420 	.byte	17,1
+00000060 1201            421 	.byte	18,1
+00000062 0000            422 	.byte	0,0
+                         423 
+                         424 	.section	.debug_info		--off: 99
+00000063 00              425 	.byte	0
+                         426 
+00000064 00              427 	.byte	0
+                         428 
+00000065 00              429 	.byte	0
+                         430 
+                         431 	.section	.debug_macinfo		--off: 0
+00000000 01              432 	.byte	1
+00000001 00              433 	.byte	0
+00000002 5f5f6768735f    434 	.strz	"__ghs__ 1"
+00000008 5f203100 
+0000000c 01              435 	.byte	1
+0000000d 00              436 	.byte	0
+0000000e 5f5f53544443    437 	.strz	"__STDC_VERSION__ 199901L"
+00000014 5f5645525349 
+0000001a 4f4e5f5f2031 
+00000020 39393930314c 
+00000026 00 
+00000027 01              438 	.byte	1
+00000028 00              439 	.byte	0
+00000029 5f5f4544475f    440 	.strz	"__EDG__ 1"
+0000002f 5f203100 
+00000033 01              441 	.byte	1
+00000034 00              442 	.byte	0
+00000035 5f5f56383530    443 	.strz	"__V850 1"
+0000003b 203100 
+0000003e 01              444 	.byte	1
+0000003f 00              445 	.byte	0
+00000040 5f5f6768735f    446 	.strz	"__ghs_max_pack_value 8"
+00000046 6d61785f7061 
+0000004c 636b5f76616c 
+00000052 7565203800 
+00000057 01              447 	.byte	1
+00000058 00              448 	.byte	0
+00000059 5f5f43484152    449 	.strz	"__CHAR_BIT 8"
+
+                                                                      Page 10
+                                                              /tmp/gh_0000ubi1.s
+0000005f 5f4249542038 
+00000065 00 
+00000066 01              450 	.byte	1
+00000067 00              451 	.byte	0
+00000068 5f5f53485254    452 	.strz	"__SHRT_BIT 16"
+0000006e 5f4249542031 
+00000074 3600 
+00000076 01              453 	.byte	1
+00000077 00              454 	.byte	0
+00000078 5f5f494e545f    455 	.strz	"__INT_BIT 32"
+0000007e 424954203332 
+00000084 00 
+00000085 01              456 	.byte	1
+00000086 00              457 	.byte	0
+00000087 5f5f4c4f4e47    458 	.strz	"__LONG_BIT 32"
+0000008d 5f4249542033 
+00000093 3200 
+00000095 01              459 	.byte	1
+00000096 00              460 	.byte	0
+00000097 5f5f5054525f    461 	.strz	"__PTR_BIT 32"
+0000009d 424954203332 
+000000a3 00 
+000000a4 01              462 	.byte	1
+000000a5 00              463 	.byte	0
+000000a6 5f5f4c4c4f4e    464 	.strz	"__LLONG_BIT 64"
+000000ac 475f42495420 
+000000b2 363400 
+000000b5 03              465 	.byte	3
+000000b6 00              466 	.byte	0
+000000b7 01              467 	.byte	1
+000000b8 03              468 	.byte	3
+000000b9 01              469 	.byte	1
+000000ba 02              470 	.byte	2
+000000bb 01              471 	.byte	1
+000000bc 14              472 	.byte	20
+000000bd 5f535444494f    473 	.strz	"_STDIO_H "
+000000c3 5f482000 
+000000c7 03              474 	.byte	3
+000000c8 15              475 	.byte	21
+000000c9 03              476 	.byte	3
+000000ca 01              477 	.byte	1
+000000cb 28              478 	.byte	40
+000000cc 5f5f4748535f    479 	.strz	"__GHS_WANT_NULL "
+000000d2 57414e545f4e 
+000000d8 554c4c2000 
+000000dd 01              480 	.byte	1
+000000de 29              481 	.byte	41
+000000df 5f5f4748535f    482 	.strz	"__GHS_WANT_SIZE_T "
+000000e5 57414e545f53 
+000000eb 495a455f5420 
+000000f1 00 
+000000f2 01              483 	.byte	1
+000000f3 2a              484 	.byte	42
+000000f4 5f5f4748535f    485 	.strz	"__GHS_WANT_SIZE_C "
+000000fa 57414e545f53 
+00000100 495a455f4320 
+00000106 00 
+00000107 04              486 	.byte	4
+00000108 03              487 	.byte	3
+00000109 27              488 	.byte	39
+0000010a 04              489 	.byte	4
+
+                                                                      Page 11
+                                                              /tmp/gh_0000ubi1.s
+0000010b 01              490 	.byte	1
+0000010c 14              491 	.byte	20
+0000010d 5f5354444152    492 	.strz	"_STDARG_H "
+00000113 475f482000 
+00000118 03              493 	.byte	3
+00000119 26              494 	.byte	38
+0000011a 05              495 	.byte	5
+0000011b 01              496 	.byte	1
+0000011c 1f              497 	.byte	31
+0000011d 5f5f5f676873    498 	.strz	"___ghs_did_pack "
+00000123 5f6469645f70 
+00000129 61636b2000 
+0000012e 04              499 	.byte	4
+0000012f 04              500 	.byte	4
+00000130 01              501 	.byte	1
+00000131 ae01            502 	.byte	174,1
+00000133 5f5f52657374    503 	.strz	"__Restrict restrict"
+00000139 726963742072 
+0000013f 657374726963 
+00000145 7400 
+00000147 01              504 	.byte	1
+00000148 c803            505 	.byte	200,3
+0000014a 5f5f4748535f    506 	.strz	"__GHS_WANT_RSIZE_T 1"
+00000150 57414e545f52 
+00000156 53495a455f54 
+0000015c 203100 
+0000015f 01              507 	.byte	1
+00000160 c903            508 	.byte	201,3
+00000162 5f5f4748535f    509 	.strz	"__GHS_WANT_ERRNO_T 1"
+00000168 57414e545f45 
+0000016e 52524e4f5f54 
+00000174 203100 
+00000177 03              510 	.byte	3
+00000178 ca03            511 	.byte	202,3
+0000017a 06              512 	.byte	6
+0000017b 04              513 	.byte	4
+0000017c 04              514 	.byte	4
+0000017d 04              515 	.byte	4
+0000017e 00              516 	.byte	0
+                         517 	.section	.debug_abbrev		--off: 100
+00000064 00              518 	.byte	0
+                         519 .rh850_flags REGMODE32,DATA_ALIGN8,GP_FIX,EP_NONFIX,TP_FIX,REG2_RESERVE,G3M,SDA_EXTRA_REGS_0

@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/BUILD",
+  "command": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/cmake_scripts/../../../tools/ghs-rh850/comp_202314/ccrh850 -DDEBUG_MODE -DHW_VERSION=0 -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Bsw/_Common -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Common -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Mcu -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Port -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro -cpu=rh850g3m -dual_debug -ignore_callt_state_in_interrupts -nofarcalls -no_callt -large_sda -Onone -prepare_dispose -reserve_r2 -shorten_loads -Wshadow -Wundef --brief_diagnostics --no_commons --no_wrap_diagnostics --prototype_errors -e _RESET  -D__GHS__ -D__RH850_P1MC__ --short_enum -c99 -bsp generic -sda=all -g -shorten_moves -passsource -list -additional_sda_reg=0 -rh850_abi=ghs2014 -Onone -g -o CMakeFiles/rh850_p1xc.dir/Micro/Interrupt_VectorTable.c.o -c /home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/Interrupt_VectorTable.c",
+  "file": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/Interrupt_VectorTable.c",
+  "output": "CMakeFiles/rh850_p1xc.dir/Micro/Interrupt_VectorTable.c.o"
+},
+{
+  "directory": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/BUILD",
+  "command": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/cmake_scripts/../../../tools/ghs-rh850/comp_202314/ccrh850 -DDEBUG_MODE -DHW_VERSION=0 -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Bsw/_Common -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Common -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Mcu -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Port -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro -cpu=rh850g3m -dual_debug -ignore_callt_state_in_interrupts -nofarcalls -no_callt -large_sda -Onone -prepare_dispose -reserve_r2 -shorten_loads -Wshadow -Wundef --brief_diagnostics --no_commons --no_wrap_diagnostics --prototype_errors -e _RESET  -D__GHS__ -D__RH850_P1MC__ --short_enum -c99 -bsp generic -sda=all -g -shorten_moves -passsource -list -additional_sda_reg=0 -rh850_abi=ghs2014 -Onone -g -o CMakeFiles/rh850_p1xc.dir/Micro/dr7f701373_startup.850.o -c /home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/dr7f701373_startup.850",
+  "file": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/dr7f701373_startup.850",
+  "output": "CMakeFiles/rh850_p1xc.dir/Micro/dr7f701373_startup.850.o"
+},
+{
+  "directory": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/BUILD",
+  "command": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/cmake_scripts/../../../tools/ghs-rh850/comp_202314/ccrh850 -DDEBUG_MODE -DHW_VERSION=0 -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Bsw/_Common -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Common -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Mcu -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Port -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro -cpu=rh850g3m -dual_debug -ignore_callt_state_in_interrupts -nofarcalls -no_callt -large_sda -Onone -prepare_dispose -reserve_r2 -shorten_loads -Wshadow -Wundef --brief_diagnostics --no_commons --no_wrap_diagnostics --prototype_errors -e _RESET  -D__GHS__ -D__RH850_P1MC__ --short_enum -c99 -bsp generic -sda=all -g -shorten_moves -passsource -list -additional_sda_reg=0 -rh850_abi=ghs2014 -Onone -g -o CMakeFiles/rh850_p1xc.dir/Micro/irq.c.o -c /home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/irq.c",
+  "file": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/irq.c",
+  "output": "CMakeFiles/rh850_p1xc.dir/Micro/irq.c.o"
+},
+{
+  "directory": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/BUILD",
+  "command": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/cmake_scripts/../../../tools/ghs-rh850/comp_202314/ccrh850 -DDEBUG_MODE -DHW_VERSION=0 -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Bsw/_Common -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Common -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Mcu -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Port -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro -cpu=rh850g3m -dual_debug -ignore_callt_state_in_interrupts -nofarcalls -no_callt -large_sda -Onone -prepare_dispose -reserve_r2 -shorten_loads -Wshadow -Wundef --brief_diagnostics --no_commons --no_wrap_diagnostics --prototype_errors -e _RESET  -D__GHS__ -D__RH850_P1MC__ --short_enum -c99 -bsp generic -sda=all -g -shorten_moves -passsource -list -additional_sda_reg=0 -rh850_abi=ghs2014 -Onone -g -o CMakeFiles/rh850_p1xc.dir/Micro/lowinit.c.o -c /home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/lowinit.c",
+  "file": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/lowinit.c",
+  "output": "CMakeFiles/rh850_p1xc.dir/Micro/lowinit.c.o"
+},
+{
+  "directory": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/BUILD",
+  "command": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/cmake_scripts/../../../tools/ghs-rh850/comp_202314/ccrh850 -DDEBUG_MODE -DHW_VERSION=0 -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Bsw/_Common -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Common -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Mcu -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Mcal/Port -I/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro -cpu=rh850g3m -dual_debug -ignore_callt_state_in_interrupts -nofarcalls -no_callt -large_sda -Onone -prepare_dispose -reserve_r2 -shorten_loads -Wshadow -Wundef --brief_diagnostics --no_commons --no_wrap_diagnostics --prototype_errors -e _RESET  -D__GHS__ -D__RH850_P1MC__ --short_enum -c99 -bsp generic -sda=all -g -shorten_moves -passsource -list -additional_sda_reg=0 -rh850_abi=ghs2014 -Onone -g -o CMakeFiles/rh850_p1xc.dir/Micro/main.c.o -c /home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/main.c",
+  "file": "/home/huangyanlong/my_p/ecus/ADAS_V2_A2/Micro/main.c",
+  "output": "CMakeFiles/rh850_p1xc.dir/Micro/main.c.o"
+}
+]

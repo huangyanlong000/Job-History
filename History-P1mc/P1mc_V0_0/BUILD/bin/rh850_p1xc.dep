@@ -1,0 +1,16 @@
+bin/rh850_p1xc.elf: ../dr7f701373.ld \
+ /home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/lib/rh850_compat/crt0.o \
+ CMakeFiles/rh850_p1xc.dir/Micro/Interrupt_VectorTable.c.o \
+ CMakeFiles/rh850_p1xc.dir/Micro/dr7f701373_startup.850.o \
+ CMakeFiles/rh850_p1xc.dir/Micro/irq.c.o \
+ CMakeFiles/rh850_p1xc.dir/Micro/lowinit.c.o \
+ CMakeFiles/rh850_p1xc.dir/Micro/main.c.o \
+ /home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/lib/rh850_22_compat/libansi.a \
+ /home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/lib/rh850_22_compat/libarena_malloc.a \
+ /home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/lib/rh850_22_compat/libwchar_s32.a \
+ /home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/lib/rh850_22_compat/libwc_s32.a \
+ /home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/lib/rh850_22_compat/libmath_fp.a \
+ /home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/lib/rh850_22_compat/libind_fp.a \
+ /home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/lib/rh850_22_compat/libstartup.a \
+ /home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/lib/rh850_22_compat/libsys.a \
+ /home/huangyanlong/my_p/tools/ghs-rh850/comp_202314/lib/rh850_22_compat/libarch.a
