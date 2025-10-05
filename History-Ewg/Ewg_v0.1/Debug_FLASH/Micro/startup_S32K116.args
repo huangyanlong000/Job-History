@@ -1,0 +1,8 @@
+-c
+-I"D:/Branch/pengda/Ewg_V1_3/include"
+-x assembler-with-cpp
+-DSTART_FROM_FLASH
+-DAUTOSAR_OS_NOT_USED
+-g3
+-mcpu=cortex-m0plus
+-specs=rdimon.specs

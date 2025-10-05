@@ -1,0 +1,11 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "mcu32k116.h": "c",
+        "s32k116.h": "c",
+        "mcu.h": "c",
+        "mcu_cfg.h": "c",
+        "mcu_envcfg.h": "c",
+        "mcu_memmap.h": "c"
+    }
+}
